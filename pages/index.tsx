@@ -3,7 +3,7 @@ import Sectionone from '../component/sectionOne'
 import Metaverse from '../component/metaverse';
 import SevenLayers from '../component/sevenLayers';
 import NFT from '../component/nft';
-
+import RoadMap from '../component/roadmap';
 
 const Home = () => {
   return (
@@ -23,6 +23,10 @@ const Home = () => {
        <section id="nft" className="container mx-auto mb-40">
           <NFT/>
        </section>
+       <section id="roadmap" className="container mx-auto mb-40">
+          <RoadMap/>
+       </section>
+      
        {/* <section id="commingsoon" className="container mx-auto mb-32">
          <h2 className="lg:text-6xl text-4xl tracking-widest uppercase"> Coming Soon</h2>
        </section> */}
