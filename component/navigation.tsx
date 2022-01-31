@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../public/images/nitro.png'
+import Logo from '../public/images/nitro-coin.png'
 
 
 const Navigation = () => {
@@ -9,10 +9,10 @@ const Navigation = () => {
         "Home",
         "Metaverse",
         "NFT",
-        "NFT Marketplace",
-        "Land"
+        "Roadmap"
     ]
-
+    // "NFT Marketplace",
+    // "Land"
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const scrollToElement = (toFind: String) => {
@@ -54,13 +54,14 @@ const Navigation = () => {
           flex flex-wrap
           items-center
           justify-between
-          bg-zinc-900/70
+          
           mb-3
           w-full
           z-20
           top-0
           shadow-sm
         "
+        style={{'backgroundColor': 'rgba(11,22,38,.5)'}}
       >
         <div className="
                 container
@@ -79,8 +80,8 @@ const Navigation = () => {
                             <Image 
                               src={Logo}
                               alt="Logo"
-                              width="95"
-                              height="30"
+                              width="80"
+                              height="65"
                               unoptimized={true}
                             />
                         </a>

@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
 import Nft from '../public/images/NFT-1.png'
-import { motion } from 'framer-motion';
 
 const nft = () => {
   return (
@@ -15,7 +14,7 @@ const nft = () => {
             </div>
         </div>
         <div  className="w-6/12 box-6">
-             <Image className="font-logo"  src={Nft}alt="Logo" />
+             <Image className="font-logo" src={Nft} alt="Logo" />
         </div>
     </div>
   );
