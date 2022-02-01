@@ -122,15 +122,20 @@ nav{
   width: 0px;
 }
 .border-after::after{
-  height: 87%;
-  top: 8%;
+  height: 95%;
+  top: 1%;
 
 }
 .border2-after::after{
   top: 15%;
   height: 75%;
 }
-
+.accordions{
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+}
 .arrow-left::after,.arrow-right::after{
   content: '';
   position: absolute;
