@@ -24,9 +24,8 @@ const Home = () => {
           <NFT/>
        </section>
        <section id="roadmap" className="container mx-auto mb-40">
-          <RoadMap/>
+          {/* <RoadMap/> */}
        </section>
-      
        {/* <section id="commingsoon" className="container mx-auto mb-32">
          <h2 className="lg:text-6xl text-4xl tracking-widest uppercase"> Coming Soon</h2>
        </section> */}
