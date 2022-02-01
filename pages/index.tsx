@@ -3,6 +3,8 @@ import Sectionone from '../component/sectionOne'
 import Metaverse from '../component/metaverse';
 import SevenLayers from '../component/sevenLayers';
 import NFT from '../component/nft';
+import { PieRadius } from '../component/piechart';
+
 import RoadMap from '../component/roadmap';
 
 const Home = () => {
@@ -22,6 +24,9 @@ const Home = () => {
        </section>
        <section id="nft" className="container mx-auto mb-40">
           <NFT/>
+       </section>
+       <section id="chart" className="container mx-auto mb-40">
+          <PieRadius/>
        </section>
        <section id="roadmap" className="container mx-auto mb-40">
           <RoadMap/>
