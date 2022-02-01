@@ -6,18 +6,17 @@ import {
 } from '@syncfusion/ej2-react-charts';
 
 export let data1: any[] = [
-  { x: 'PRESALE', y: 1232131, r: '90%' },
-  { x: 'PRIVATE SALE', y: 551500, r: '91%' },
-  { x: 'LIQUIDITY POOL', y: 312685, r: '92%' },
-  { x: 'AIRDROP', y: 350000, r: '91%' },
-  { x: 'MARKETING', y: 301000, r: '95%' },
-  { x: 'DEVELOPER', y: 300000, r: '98%' },
-  { x: 'EXPANSION', y: 357022, r: '94%' },
-  { x: 'REWARD & COMPENSATION POOL', y: 1231123, r: '100%' },
+  { x: 'PRESALE (90%)', y: 100000, r: '90%' },
+  { x: 'PRIVATE SALE (90%)', y: 100000, r: '91%' },
+  { x: 'LIQUIDITY POOL (90%)', y: 100000, r: '92%' },
+  { x: 'AIRDROP (90%)', y: 100000, r: '91%' },
+  { x: 'MARKETING (90%)', y: 130000, r: '95%' },
+  { x: 'DEVELOPER (90%)', y: 100000, r: '98%' },
+  { x: 'EXPANSION (90%)', y: 100000, r: '94%' },
+  { x: 'REWARD & COMPENSATION POOL (90%)', y: 100000, r: '98%' },
 ];
 export class PieRadius extends React.Component {
   public pie: AccumulationChartComponent;
-  
   render() {
   const palettes = [
       '#00fdfc',
@@ -33,18 +32,26 @@ export class PieRadius extends React.Component {
   const title = {
     fontFamily: "sans-serif",
     fontWeight: 'bold',
-    color: "black",
-    size: '30px'
+    color: "#fff",
+    size: '40px',
 };
+const subTitle = {
+  fontWeight: 'bold',
+  size: '60px',
+};
+console.log(this.pie)
+
     return (
-      <div className='control-pane'>
-        <div className='control-section'>
-          <AccumulationChartComponent id='pie-chart' ref={pie => this.pie = pie}
+      <div className="text-center w-full mb-4 my-44">
+        <div className=''>
+          <AccumulationChartComponent className='' id='pie-chart' ref={pie => this.pie = pie}
             legendSettings={{
-              visible: true,
+              visible: false,
               reverse: true,
-              width: '250', height: '300', border: { width: 2, color: 'red' } 
+              background: "#111021",  
+              width: '270', height: '250', border: { width: 3, color: '#0197a9' }
             }}
+            background='#07071c'
             useGroupingSeparator={true} 
             enableSmartLabels={true}
             enableAnimation={true}
@@ -52,6 +59,8 @@ export class PieRadius extends React.Component {
             tooltip={{ enable: true }}
             title='TOKEN ALLOCATION'
             titleStyle={title}
+            subTitle='&nbsp;'
+            subTitleStyle={subTitle}
             
           >
             <Inject  services={[AccumulationLegend, PieSeries, AccumulationDataLabel, AccumulationTooltip]} />
@@ -63,22 +72,10 @@ export class PieRadius extends React.Component {
                    name: 'x',
                    font: {
                        fontWeight: '600',
-                       size: '20px',
-                       color: '#ff1d7f'
+                       size: '15px',
+                       color: '#fff',
                    },
-         
-                   connectorStyle: {
-                    //Length of the connector line in pixels
-                    length: '50px',
-                    //Width of the connector line in pixels
-                    width: 3,
-                    //dashArray of the connector line
-                    dashArray: '5,3',
-                    //Color of the connector line
-                    color: '#f4429e',
-                    //Specifies the type of the connector line either Line or Curve
-                    type: 'Curve'
-                }
+                
                 }}
                 radius='r'
                 palettes={palettes}
