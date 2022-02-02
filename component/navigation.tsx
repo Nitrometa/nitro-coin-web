@@ -7,8 +7,8 @@ import Logo from '../public/images/nitro-coin.png'
 const Navigation = () => {
     const links = [
         "Home",
-        "Tokenomics",
         "Token Allocation",
+        "Tokenomics",
         "Metaverse",
         "NFT",
         "Roadmap"

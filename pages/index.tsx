@@ -18,7 +18,7 @@ const Home = () => {
           <Sectionone/>
         </section>
        </section>
-       <section id="chart" className="container mx-auto mb-32">
+       <section id="token-allocation" className="container mx-auto mb-32">
           <PieRadius/>
        </section>
        <section id="tokenomics" className="container mx-auto mb-32">
