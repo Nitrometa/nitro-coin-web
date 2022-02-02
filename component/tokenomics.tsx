@@ -42,10 +42,21 @@ const tokenomics = () => {
     // ]
   return (
       <>
-        <div className="flex lg:flex-row flex-col justify-between gap-8 mb-32">
+        <div className="flex lg:flex-row flex-col justify-between gap-8 mb-32 ">
+            <div className="relative" style={{'width': '120px', 'height': '120px'}} >
+                <span className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">15%</span>
+                <svg transform="matrix(0 -1 -1 0 0 0)" className="bg-transparent rounded-full" width="120" height="120">
+                    <path d="M 112 60 A 52 52 0 0 0 17.931116292502736 29.435166880791392" className="chart-item-0 rounded-full stroke-blue-700 shadow-lg shadow-white"  fill="transparent" stroke-width="16"></path>
+                    <path d="M 17.931116292502736 29.435166880791392 A 52 52 0 0 0 43.93111629250272 109.45493884734799" className="chart-item-0 rounded-full stroke-blue-900"  fill="transparent" stroke-width="16"></path>
+                    <path d="M 43.93111629250272 109.45493884734799 A 52 52 0 0 0 112 60.000000000000014" className="chart-item-0 rounded-full stroke-blue-900"  fill="transparent" stroke-width="16"></path>
+                </svg>
+                <h1 className="mt-2">Presell</h1>
+            </div>
            <div className="w-9/12  mx-auto"><br />
+          
             <div className="ml-24">
-            <h3 className="text-4xl mb-8 mr-20">Tokenomics</h3>
+            <h3 className="text-4xl mb-8 ">Tokenomics</h3>
+
                 <div className="flex lg:flex-row flex-col justify-between gap-8 ">
                     <div className="w-9/12  mx-auto">
                         <ul className="list-disc text-left mx-auto">
@@ -77,13 +88,13 @@ const tokenomics = () => {
            </div>
         </div>
         <div className="flex lg:flex-row flex-col justify-center gap-8 mb-32">
-           <div  className="w-6/12 max-auto">
-            <h3 className="text-4xl mb-8 max-auto">Distribution of tokens</h3>
-                <p className="text-left  text-left max-auto">
+           <div  className="w-full max-auto text-center">
+            <h3 className="text-4xl mb-8">Distribution of tokens</h3>
+                <p  className=" opacity-70">
                  <strong>NITRO COIN</strong> Is a binance smart chain boasting various impressive features.
                 </p>
                 <br /> 
-                <p className="text-left  indent-14">
+                <p className=" opacity-70">
                  This is a unique exchange protocol that gives user complete control over how they manage their finances. Apart from offering spot trading and staking utility owners NITRO COIN’s native token,  can create surveys and vote on changes to implement on the platform. Voting is just as important as adjusting the algorithm and deciding how to generate revenue.
                 </p>
            </div>
