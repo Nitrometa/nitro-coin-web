@@ -57,16 +57,16 @@ const RoadMap = () =>{
 
     return (
         <>
-        <div className="text-center w-full mb-4 my-44 ">
-            <h2 className="lg:text-6xl text-4xl tracking-widest uppercase ">Road Map</h2>
+        <div className="text-center w-full mb-4 ">
+            <h2 className="lg:text-5xl text-4xl  uppercase ">Road Map</h2>
         </div>
       
-        <div className="grid grid-cols-1 gap-8 mt-10 lg:w-1/2 w-9/12 mx-auto">
+        <div className="grid grid-cols-1 gap-8 mt-10 lg:w-1/2 w-10/12 mx-auto cabinet">
             
-            <div className="col-span-1 bg-blue-700 shadow-lg shadow-blue-900 rounded">
+            <div className="col-span-1 bg-blue-700 shadow-lg shadow-blue-900 rounded z-10">
                 <div className="flex flex-row justify-between  px-4 items-center">
                     <h3 className="text-2xl my-4">Stage 1</h3>  
-                    <button className="inline-block w-10 h-10 text-black p-1" onClick={() => setShowStage1((prev) => !prev) }>
+                    <button className={ !isShowStage1 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" }  onClick={() => setShowStage1((prev) => !prev) }>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             viewBox="0 0 128 128"
                             style={{"fill":"#FFF"}}>    
@@ -74,7 +74,7 @@ const RoadMap = () =>{
                         </svg>
                     </button>
                 </div> 
-                <div className={ isShowStage1 ? "grid grid-cols-6 gap-8 p-12 pt-4 border-after mt-4 transition-all" : "accordions transition-all" } >
+                <div className={ isShowStage1 ? "grid lg:grid-cols-6   gap-8 lg:p-12 p-4 pt-4 border-after transition-all border-t border-white" : "accordions transition-all" } >
                     {
                         stage1.map((element,index)=>{
                             if (index % 2 === 0) {
@@ -87,8 +87,8 @@ const RoadMap = () =>{
                             }else{
                                 return (
                                     <>
-                                        <div className="col-end-7 col-span-2 "></div>
-                                        <div className="col-end-7 col-span-2 text-right arrow-right">{element}</div>
+                                        <div className="lg:col-end-7 col-end-6 col-span-2 "></div>
+                                        <div className="lg:col-end-7 col-end-6 col-span-2 text-right arrow-right ">{element}</div>
                                     </>
                                 )
                             }
@@ -97,10 +97,10 @@ const RoadMap = () =>{
                     }
                 </div>
             </div>
-            <div className="col-span-1 bg-green-700 shadow-lg shadow-green-900 rounded">
+            <div className="col-span-1 bg-green-700 shadow-lg shadow-green-900 rounded z-10">
                 <div className="flex flex-row justify-between  px-4 items-center">
                     <h3 className="text-2xl my-4">Stage 2</h3>  
-                    <button className="inline-block w-10 h-10 text-black p-1" onClick={() => setShowStage2((prev) => !prev) }>
+                    <button className={ !isShowStage2 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" } onClick={() => setShowStage2((prev) => !prev) }>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             viewBox="0 0 128 128"
                             style={{"fill":"#FFF"}}>    
@@ -108,13 +108,13 @@ const RoadMap = () =>{
                         </svg>
                     </button>
                 </div> 
-                <div className={ isShowStage2 ? "grid grid-cols-6 gap-8 p-12 pt-4 border-after mt-4 transition-all" : "accordions transition-all" } >
+                <div className={ isShowStage2 ? "grid lg:grid-cols-6  gap-8 lg:p-12 p-4 pt-4 border-after transition-all border-t border-white" : "accordions transition-all" } >
                     {
                         stage2.map((element,index)=>{
                             if (index % 2 === 0) {
                                 return (
                                     <>
-                                        <div className="col-start-1 col-end-3 text-left arrow-left">{element}</div>
+                                        <div className="col-start-1 col-end-3 text-left arrow-left-2">{element}</div>
                                         <div className="col-start-1 col-end-3 text-left "></div>
                                     </>
                                 )
@@ -122,7 +122,7 @@ const RoadMap = () =>{
                                 return (
                                     <>
                                         <div className="col-end-7 col-span-2 "></div>
-                                        <div className="col-end-7 col-span-2 text-right arrow-right">{element}</div>
+                                        <div className="col-end-7 col-span-2 text-right arrow-right-2">{element}</div>
                                     </>
                                 )
                             }
@@ -132,10 +132,10 @@ const RoadMap = () =>{
                   
                 </div>
             </div>
-            <div className="col-span-1 bg-yellow-700 shadow-lg shadow-yellow-900 rounded">
+            <div className="col-span-1 bg-yellow-700 shadow-lg shadow-yellow-900 rounded z-10">
                 <div className="flex flex-row justify-between px-4 items-center">
                     <h3 className="text-2xl my-4">Stage 3</h3>  
-                    <button className="inline-block w-10 h-10 text-black p-1" onClick={() => setShowStage3((prev) => !prev) }>
+                    <button className={ !isShowStage3 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" } onClick={() => setShowStage3((prev) => !prev) }>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             viewBox="0 0 128 128"
                             style={{"fill":"#FFF"}}>    
@@ -143,13 +143,13 @@ const RoadMap = () =>{
                         </svg>
                     </button>
                 </div> 
-                <div className={ isShowStage3 ? "grid grid-cols-6 gap-8 p-12 pt-4 border-after mt-4 transition-all" : "accordions transition-all" } >
+                <div className={ isShowStage3 ? "grid lg:grid-cols-6 gap-8 lg:p-12 p-4 pt-4 border-after transition-all border-t border-white" : "accordions transition-all" } >
                     {
                         stage3.map((element,index)=>{
                             if (index % 2 === 0) {
                                 return (
                                     <>
-                                        <div className="col-start-1 col-end-3 text-left arrow-left">{element}</div>
+                                        <div className="col-start-1 col-end-3 text-left arrow-left-3">{element}</div>
                                         <div className="col-start-1 col-end-3 text-left "></div>
                                     </>
                                 )
@@ -157,7 +157,7 @@ const RoadMap = () =>{
                                 return (
                                     <>
                                         <div className="col-end-7 col-span-2 "></div>
-                                        <div className="col-end-7 col-span-2 text-right arrow-right">{element}</div>
+                                        <div className="col-end-7 col-span-2 text-right arrow-right-3">{element}</div>
                                     </>
                                 )
                             }
@@ -167,10 +167,10 @@ const RoadMap = () =>{
                   
                 </div>
             </div>
-            <div className="col-span-1 bg-fuchsia-700 shadow-lg shadow-fuchsia-900 rounded">
+            <div className="col-span-1 bg-fuchsia-700 shadow-lg shadow-fuchsia-900 rounded z-10">
                 <div className="flex flex-row justify-between  px-4 items-center">
                     <h3 className="text-2xl my-4">Stage 4</h3>  
-                    <button className="inline-block w-10 h-10 text-black p-1" onClick={() => setShowStage4((prev) => !prev) }>
+                    <button className={ !isShowStage4 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" } onClick={() => setShowStage4((prev) => !prev) }>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             viewBox="0 0 128 128"
                             style={{"fill":"#FFF"}}>    
@@ -178,13 +178,12 @@ const RoadMap = () =>{
                         </svg>
                     </button>
                 </div> 
-                <div className={ isShowStage4 ? "grid grid-cols-6 gap-8 p-12 pt-4 border-after mt-4 transition-all" : "accordions transition-all" } >
-                    {
+                <div className={ isShowStage4 ? "grid lg:grid-cols-6 gap-8 lg:p-12 p-4 pt-4 border-after  transition-all border-t border-white" : "accordions transition-all" } >                 {
                         stage4.map((element,index)=>{
                             if (index % 2 === 0) {
                                 return (
                                     <>
-                                        <div className="col-start-1 col-end-3 text-left arrow-left">{element}</div>
+                                        <div className="col-start-1 col-end-3 text-left arrow-left-4">{element}</div>
                                         <div className="col-start-1 col-end-3 text-left "></div>
                                     </>
                                 )
@@ -192,7 +191,7 @@ const RoadMap = () =>{
                                 return (
                                     <>
                                         <div className="col-end-7 col-span-2 "></div>
-                                        <div className="col-end-7 col-span-2 text-right arrow-right">{element}</div>
+                                        <div className="col-end-7 col-span-2 text-right arrow-right-4">{element}</div>
                                     </>
                                 )
                             }

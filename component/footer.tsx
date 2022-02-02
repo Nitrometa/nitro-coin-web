@@ -11,7 +11,7 @@ const Footer = () => {
             <footer >
 
                 <div className="text-center lg:w-1/2 w-9/12 mx-auto mt-4 opacity-80 text-lg">
-                    Mission and Visionour mission is to offer a high performance exchange at the heart of bincance smart chain. our partners and teams align in our aim to provide high quality service to our community members.NITROCOIN community is a single large family with an ever evolving series of events. Our network ensures high security to our community members through third party audits.
+                    Mission and Visionour mission is to offer a high performance exchange at the heart of bincance smart chain. our partners and teams align in our aim to provide high quality service to our community members. NITROCOIN community is a single large family with an ever evolving series of events. Our network ensures high security to our community members through third party audits.
                 </div>
              
                 <div className="text-center my-10">
