@@ -121,8 +121,8 @@ const Navigation = () => {
                             <Image
                                 src={Logo}
                                 alt="Logo"
-                                width="95"
-                                height="28"
+                                width="80"
+                                height="65"
                                 unoptimized={true}
                             />
                         </a>

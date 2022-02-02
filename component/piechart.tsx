@@ -39,7 +39,6 @@ const subTitle = {
   fontWeight: 'bold',
   size: '60px',
 };
-console.log(this.pie)
 
     return (
       <div className="text-center w-full mb-4 my-44">
