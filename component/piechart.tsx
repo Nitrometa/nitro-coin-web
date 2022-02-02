@@ -42,7 +42,7 @@ const subTitle = {
 
     return (
       <div className="text-center w-full mb-4 my-44">
-        <div className=''>
+        <div className="flex justify-center items-center">
           <AccumulationChartComponent className='' id='pie-chart' ref={pie => this.pie = pie}
             legendSettings={{
               visible: false,

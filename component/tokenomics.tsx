@@ -72,9 +72,9 @@ const tokenomics = () => {
            <div className="w-9/12  mx-auto"><br />
             <div className="justify-center">
             <div className="text-center w-full mb-4 ">
-            <h3 className="text-4xl mb-8 mr-20 text-center">Tokenomics</h3>
+            <h3 className="text-4xl mb-8  text-center">Tokenomics</h3>
             </div>
-                <div className="flex flex-row lg:flex-row flex-col justify-between gap-8 ">
+                <div className="flex  lg:flex-row flex-col justify-between gap-8 ">
                 {
                         tokenomics.map((element,key) => {
                         return (
@@ -98,20 +98,18 @@ const tokenomics = () => {
             
            </div>
         </div>
-        <div className="flex lg:flex-row flex-col justify-center gap-8 mb-32">
-           <div  className="w-6/12 max-auto">
-           <div className="flex lg:flex-row flex-col justify-center gap-8 mb-32">
-           <div  className="w-full max-auto text-center">
-            <h3 className="text-4xl mb-8">Distribution of tokens</h3>
-                <p  className=" opacity-70">
-                 <strong>NITRO COIN</strong> Is a binance smart chain boasting various impressive features.
-                </p>
-                <br /> 
-                <p className=" opacity-70">
-                 This is a unique exchange protocol that gives user complete control over how they manage their finances. Apart from offering spot trading and staking utility owners NITRO COIN’s native token,  can create surveys and vote on changes to implement on the platform. Voting is just as important as adjusting the algorithm and deciding how to generate revenue.
-                </p>
-           </div>
-        </div>
+            <div className="flex lg:flex-row flex-col justify-center gap-8 mb-32">
+                    <div className="flex lg:flex-row flex-col justify-center gap-8 mb-32">
+                    <div  className="w-full max-auto text-center">
+                        <h3 className="text-4xl mb-8">Distribution of tokens</h3>
+                            <p  className=" opacity-70">
+                            <strong>NITRO COIN</strong> Is a binance smart chain boasting various impressive features.
+                            </p>
+                            <br /> 
+                            <p className=" opacity-70">
+                            This is a unique exchange protocol that gives user complete control over how they manage their finances. Apart from offering spot trading and staking utility owners NITRO COIN’s native token,  can create surveys and vote on changes to implement on the platform. Voting is just as important as adjusting the algorithm and deciding how to generate revenue.
+                            </p>
+                    </div>
            </div>
         </div>
       </>
