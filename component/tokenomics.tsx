@@ -1,28 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 import Nft from '../public/images/NFT-1.png'
-    {/* <div className="w-9/12  mx-auto">
-                        <ul className="list-disc text-left mx-auto">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul><br /><br />
-                    </div>
-                    <div  className="w-6/12 max-auto mt-15 mr-12">
-                        <ul className="list-none leading-6 font-thin text-sm text-left">
-                            <li>5% distribution for presell</li>
-                            <li>50% for liquidity pool</li>
-                            <li>10% for staking pool</li>
-                            <li>5% for marketing development</li>
-                            <li>10% for strategic partnership</li>
-                            <li>5% for private sale</li>
-                            <li>5% emergency fund</li>
-                            <li>10% allocated in team tokens</li>
-                        </ul>
-                    </div> */}
+  
 const tokenomics = () => {
     const tokenomics = [
     {

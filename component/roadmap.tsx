@@ -80,15 +80,15 @@ const RoadMap = () =>{
                             if (index % 2 === 0) {
                                 return (
                                     <>
-                                        <div className="col-start-1 col-end-3 text-left arrow-left">{element}</div>
-                                        <div className="col-start-1 col-end-3 text-left "></div>
+                                        <div className="col-start-1 col-end-3 text-left arrow-left" key={index}>{element}</div>
+                                        <div className="col-start-1 col-end-3 text-left " key={index+2}></div>
                                     </>
                                 )
                             }else{
                                 return (
                                     <>
-                                        <div className="lg:col-end-7 col-end-6 col-span-2 "></div>
-                                        <div className="lg:col-end-7 col-end-6 col-span-2 text-right arrow-right ">{element}</div>
+                                        <div className="lg:col-end-7 col-end-6 col-span-2 " key={index+1}></div>
+                                        <div className="lg:col-end-7 col-end-6 col-span-2 text-right arrow-right " key={index}>{element}</div>
                                     </>
                                 )
                             }
@@ -114,15 +114,15 @@ const RoadMap = () =>{
                             if (index % 2 === 0) {
                                 return (
                                     <>
-                                        <div className="col-start-1 col-end-3 text-left arrow-left-2">{element}</div>
-                                        <div className="col-start-1 col-end-3 text-left "></div>
+                                        <div className="col-start-1 col-end-3 text-left arrow-left-2" key={index}>{element}</div>
+                                        <div className="col-start-1 col-end-3 text-left" key={index+2}></div>
                                     </>
                                 )
                             }else{
                                 return (
                                     <>
-                                        <div className="col-end-7 col-span-2 "></div>
-                                        <div className="col-end-7 col-span-2 text-right arrow-right-2">{element}</div>
+                                        <div className="col-end-7 col-span-2 " key={index+1}></div>
+                                        <div className="col-end-7 col-span-2 text-right arrow-right-2" key={index}>{element}</div>
                                     </>
                                 )
                             }
@@ -149,15 +149,15 @@ const RoadMap = () =>{
                             if (index % 2 === 0) {
                                 return (
                                     <>
-                                        <div className="col-start-1 col-end-3 text-left arrow-left-3">{element}</div>
-                                        <div className="col-start-1 col-end-3 text-left "></div>
+                                        <div className="col-start-1 col-end-3 text-left arrow-left-3" key={index}>{element}</div>
+                                        <div className="col-start-1 col-end-3 text-left " key={index +2}></div>
                                     </>
                                 )
                             }else{
                                 return (
                                     <>
-                                        <div className="col-end-7 col-span-2 "></div>
-                                        <div className="col-end-7 col-span-2 text-right arrow-right-3">{element}</div>
+                                        <div className="col-end-7 col-span-2 " key={index+1}></div>
+                                        <div className="col-end-7 col-span-2 text-right arrow-right-3" key={index}>{element}</div>
                                     </>
                                 )
                             }
@@ -183,15 +183,15 @@ const RoadMap = () =>{
                             if (index % 2 === 0) {
                                 return (
                                     <>
-                                        <div className="col-start-1 col-end-3 text-left arrow-left-4">{element}</div>
-                                        <div className="col-start-1 col-end-3 text-left "></div>
+                                        <div className="col-start-1 col-end-3 text-left arrow-left-4" key={index}>{element}</div>
+                                        <div className="col-start-1 col-end-3 text-left" key={index +2}></div>
                                     </>
                                 )
                             }else{
                                 return (
                                     <>
-                                        <div className="col-end-7 col-span-2 "></div>
-                                        <div className="col-end-7 col-span-2 text-right arrow-right-4">{element}</div>
+                                        <div className="col-end-7 col-span-2 " key={index +1}></div>
+                                        <div className="col-end-7 col-span-2 text-right arrow-right-4" key={index}>{element}</div>
                                     </>
                                 )
                             }
