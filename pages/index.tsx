@@ -3,6 +3,10 @@ import Sectionone from '../component/sectionOne'
 import Metaverse from '../component/metaverse';
 import SevenLayers from '../component/sevenLayers';
 import NFT from '../component/nft';
+import { PieRadius } from '../component/piechart';
+import  Tokenomics  from '../component/tokenomics';
+import  Mission  from '../component/missionvission';
+
 import RoadMap from '../component/roadmap';
 
 const Home = () => {
@@ -14,21 +18,28 @@ const Home = () => {
           <Sectionone/>
         </section>
        </section>
+       <section id="token-allocation" className="container mx-auto mb-32">
+          <PieRadius/>
+       </section>
+       <section id="tokenomics" className="container mx-auto mb-32">
+         <Tokenomics/>
+       </section>
        <section id="metaverse" className="container mx-auto mb-32">
           <Metaverse/>
        </section>
        <section id="7layersmetaverse" className="container mx-auto mb-32">
           <SevenLayers/>
        </section>
-       <section id="nft" className="container mx-auto mb-40">
+       <section id="nft" className="container mx-auto mb-32">
           <NFT/>
        </section>
-       <section id="roadmap" className="container mx-auto mb-40">
-          {/* <RoadMap/> */}
+       <section id="roadmap" className="container mx-auto mb-32">
+          <RoadMap/>
        </section>
-       {/* <section id="commingsoon" className="container mx-auto mb-32">
-         <h2 className="lg:text-6xl text-4xl tracking-widest uppercase"> Coming Soon</h2>
-       </section> */}
+       <section id="missionvission" className="container mx-auto mb-32">
+         <Mission/>
+       </section>
+ 
      </Layouts>
     </>
   )

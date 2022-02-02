@@ -6,13 +6,7 @@ const Footer = () => {
  
     return (
         <>
-        {/* <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script> */}
-
-            <footer>
-
-                <div className="text-center lg:w-1/2 w-9/12 mx-auto mt-4 opacity-80 text-lg">
-                    Mission and Visionour mission is to offer a high performance exchange at the heart of bincance smart chain. our partners and teams align in our aim to provide high quality service to our community members.NITROCOIN community is a single large family with an ever evolving series of events. Our network ensures high security to our community members through third party audits.
-                </div>
+            <footer >
 
                 <div className="text-center my-10">
                     <hr className="mx-20 mb-10"/>

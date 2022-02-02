@@ -7,6 +7,8 @@ import Logo from '../public/images/nitro-coin.png'
 const Navigation = () => {
     const links = [
         "Home",
+        "Token Allocation",
+        "Tokenomics",
         "Metaverse",
         "NFT",
         "Roadmap"
@@ -16,6 +18,7 @@ const Navigation = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const scrollToElement = (toFind: String) => {
+        console.log(toFind)
         const section = document.querySelector(`#${toFind.toLowerCase()}`)
         if(toFind == 'NFT Marketplace' || toFind == 'Land' ){
             window.scrollTo({ 
@@ -23,10 +26,17 @@ const Navigation = () => {
                 behavior: 'smooth' 
             })
         }else{
-            window.scrollTo({ 
-                top: window.scrollY + section.getBoundingClientRect().top - 120, 
-                behavior: 'smooth' 
-            })
+            if(toFind == 'Token Allocation'){
+                window.scrollTo({ 
+                    top: window.scrollY + document.querySelector(`#token-allocation`).getBoundingClientRect().top - 120, 
+                    behavior: 'smooth' 
+                })
+            }else{
+                window.scrollTo({ 
+                    top: window.scrollY + section.getBoundingClientRect().top - 120, 
+                    behavior: 'smooth' 
+                })
+            }
             addRemoveClass(toFind);
         }
         setMobileOpen(false);
@@ -121,8 +131,8 @@ const Navigation = () => {
                             <Image
                                 src={Logo}
                                 alt="Logo"
-                                width="95"
-                                height="28"
+                                width="80"
+                                height="65"
                                 unoptimized={true}
                             />
                         </a>
