@@ -4,6 +4,7 @@ import {
   AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, AccumulationLegend, PieSeries, AccumulationDataLabel, AccumulationTooltip,
   Inject, IAccLoadedEventArgs, AccumulationTheme
 } from '@syncfusion/ej2-react-charts';
+import { isMobile } from 'react-device-detect';
 
 export let data1: any[] = [
   { x: 'PRESALE (90%)', y: 100000, r: '90%' },
@@ -33,7 +34,8 @@ export class PieRadius extends React.Component {
     fontFamily: "sans-serif",
     fontWeight: 'bold',
     color: "#fff",
-    size: '40px',
+    size:isMobile  == true ? '30px' : '40px',
+    ismobile:isMobile == true ? false : true
 };
 const subTitle = {
   fontWeight: 'bold',
@@ -66,7 +68,7 @@ const subTitle = {
             <AccumulationSeriesCollectionDirective >
               <AccumulationSeriesDirective dataSource={data1} xName='x' yName='y' innerRadius='10%'
                 dataLabel={{
-                   visible: true,
+                   visible: title.ismobile, 
                    position: 'Outside', 
                    name: 'x',
                    font: {
