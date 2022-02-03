@@ -366,7 +366,8 @@ a {
    font-size: 2rem!important;
   }
   .mid{
-    top: 35%;
+    /* top: 35%; */
+    display: none;
   }
   /* #pie-chart_svg,#pie-chart_border,#pie-chart_SeriesCollection{
     width: 400px!important;
