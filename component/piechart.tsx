@@ -39,18 +39,22 @@ export class PieRadius extends React.Component {
 };
 const subTitle = {
   fontWeight: 'bold',
-  size: '60px',
+  size: isMobile ? '20px' : '60px',
 };
-
+const legendStyle = {
+  color: '#fff'
+};
     return (
       <div className="text-center w-full mb-4 my-44">
         <div className="flex justify-center items-center overflow-hidden">
           <AccumulationChartComponent className="pie-chart-class" id='pie-chart' ref={pie => this.pie = pie}
             legendSettings={{
-              visible: false,
+              visible: isMobile ? true : false,
               reverse: true,
+              position: 'Bottom',
               background: "#111021",  
-              width: '270', height: '250', border: { width: 3, color: '#0197a9' }
+              textStyle: legendStyle,
+              width: '300', height: '140', border: { width: 3, color: '#0197a9' }
             }}
             background='#07071c'
             useGroupingSeparator={true} 
