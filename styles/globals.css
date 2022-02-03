@@ -347,7 +347,12 @@ a {
     text-shadow: -1.5px 1.5px 0 #0ff, -1.5px 1.5px 0 #f00;
   }
 }
-
+.mid{
+  position: absolute;
+  top: 32%;
+  left: 48%;
+  transform: translate(-50%,-50%);
+}
 @media screen and (max-width: 600px) {
   .box-5::after {
     top: 15%;
@@ -357,6 +362,24 @@ a {
     top: 30%;
     left: 0%;
   }
+  #pie-chart_title{
+   font-size: 2rem!important;
+  }
+  .mid{
+    top: 35%;
+  }
+  /* #pie-chart_svg,#pie-chart_border,#pie-chart_SeriesCollection{
+    width: 400px!important;
+  } */
+  .e-chart { 
+      width: inherit !important; 
+      height: inherit !important; 
+  } 
+
+  .e-accumulationchart { 
+      width: inherit !important; 
+      height: inherit !important; 
+  } 
 }
 
 @media only screen and (min-width: 960px) {
