@@ -57,7 +57,7 @@ const tokenomics = () => {
                     {
                             tokenomics.map((element,key) => {
                             return (
-                            <div className="relative">
+                            <div className="relative text-center">
                                 <span className="mid">{element.value}</span>
                                 <svg transform="matrix(0 -1 -1 0 0 0)" className="bg-transparent rounded-full" width="120" height="120">
                                     <path d="M 112 60 A 52 52 0 0 0 17.931116292502736 29.435166880791392" className={element.class}  fill="transparent" stroke-width="16"></path>
@@ -76,14 +76,14 @@ const tokenomics = () => {
            </div>
         </div>
             <div className="flex lg:flex-row flex-col justify-center gap-8 mb-32">
-                    <div className="flex lg:flex-row flex-col justify-center gap-8 mb-32">
+                    <div className="flex lg:flex-row flex-col justify-center gap-8 ">
                     <div  className="w-full max-auto text-center">
                         <h3 className="text-4xl mb-8">Distribution of tokens</h3>
                             <p  className=" opacity-70">
                             <strong>NITRO COIN</strong> Is a binance smart chain boasting various impressive features.
                             </p>
                             <br /> 
-                            <p className=" opacity-70">
+                            <p className=" opacity-70 lg:px-0 px-4">
                             This is a unique exchange protocol that gives user complete control over how they manage their finances. Apart from offering spot trading and staking utility owners NITRO COIN’s native token,  can create surveys and vote on changes to implement on the platform. Voting is just as important as adjusting the algorithm and deciding how to generate revenue.
                             </p>
                     </div>
