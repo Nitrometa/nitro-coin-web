@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 
 const RoadMap = () =>{
     const stage1 = [
-        'Team Alignement',
+        'Team Alignment',
         'Research and Development',
         'Graphic Design',
         'Social Media and Website Creation',
