@@ -43,7 +43,9 @@ const Navigation = () => {
     }
     const addRemoveClass = (toFind) =>{
         links.forEach((element)=>{
-            const tag = (element == 'NFT Marketplace' || element == 'Land') ? 'commingsoon' : element
+            const tag =  (element == 'NFT Marketplace' || element == 'Land') ? 
+            'commingsoon' : (element== 'Token Allocation') ?
+            'token-allocation' :element
             if(element== toFind){
                 document.querySelector(`#${tag.toLowerCase()}`)?.classList.add('slide-in-bottom');
             }else{
