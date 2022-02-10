@@ -57,12 +57,12 @@ const tokenomics = () => {
                     {
                             tokenomics.map((element,key) => {
                             return (
-                            <div className="relative text-center">
+                            <div className="relative text-center" key={key}>
                                 <span className="mid">{element.value}</span>
                                 <svg transform="matrix(0 -1 -1 0 0 0)" className="bg-transparent rounded-full" width="120" height="120">
-                                    <path d="M 112 60 A 52 52 0 0 0 17.931116292502736 29.435166880791392" className={element.class}  fill="transparent" stroke-width="16"></path>
-                                    <path d="M 17.931116292502736 29.435166880791392 A 52 52 0 0 0 43.93111629250272 109.45493884734799" className={ element.value=='50%' ? element.class : "chart-item-0 rounded-full stroke-blue-900" }  fill="transparent" stroke-width="16"></path>
-                                    <path d="M 43.93111629250272 109.45493884734799 A 52 52 0 0 0 112 60.000000000000014" className="chart-item-0 rounded-full stroke-blue-900"  fill="transparent" stroke-width="16"></path>
+                                    <path d="M 112 60 A 52 52 0 0 0 17.931116292502736 29.435166880791392" className={element.class}  fill="transparent" strokeWidth="16"></path>
+                                    <path d="M 17.931116292502736 29.435166880791392 A 52 52 0 0 0 43.93111629250272 109.45493884734799" className={ element.value=='50%' ? element.class : "chart-item-0 rounded-full stroke-blue-900" }  fill="transparent" strokeWidth="16"></path>
+                                    <path d="M 43.93111629250272 109.45493884734799 A 52 52 0 0 0 112 60.000000000000014" className="chart-item-0 rounded-full stroke-blue-900"  fill="transparent" strokeWidth="16"></path>
                                 </svg>
                                 <h1 className="mt-2">{ element.name } <span className="lg:hidden block">({element.value})</span></h1>
                             </div>

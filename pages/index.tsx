@@ -24,9 +24,11 @@ const Home = () => {
        <section id="tokenomics" className="container mx-auto mb-32">
          <Tokenomics/>
        </section>
-       <section id="metaverse" className="container mx-auto mb-32">
-          <Metaverse/>
-       </section>
+       <div className="w-full relative background-custom py-24 mb-32 z-10">
+        <section id="metaverse" className="container mx-auto ">
+            <Metaverse/>
+        </section>
+       </div>
        <section id="7layersmetaverse" className="container mx-auto mb-32">
           <SevenLayers/>
        </section>
