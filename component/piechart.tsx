@@ -7,14 +7,14 @@ import {
 import { isMobile } from 'react-device-detect';
 
 export let data1: any[] = [
-  { x: 'PRESALE (90%)', y: 100000, r: '90%' },
-  { x: 'PRIVATE SALE (90%)', y: 100000, r: '91%' },
-  { x: 'LIQUIDITY POOL (90%)', y: 100000, r: '92%' },
-  { x: 'AIRDROP (90%)', y: 100000, r: '91%' },
-  { x: 'MARKETING (90%)', y: 130000, r: '95%' },
-  { x: 'DEVELOPER (90%)', y: 100000, r: '98%' },
-  { x: 'EXPANSION (90%)', y: 100000, r: '94%' },
-  { x: 'REWARD & COMPENSATION POOL (90%)', y: 100000, r: '98%' },
+  { x: 'PRESALE (20%)', y: 100000, r: '90%' },
+  { x: 'PRIVATE SALE (10%)', y: 100000, r: '91%' },
+  { x: 'LIQUIDITY POOL (10%)', y: 100000, r: '92%' },
+  { x: 'AIRDROP (10%)', y: 100000, r: '91%' },
+  { x: 'MARKETING (10%)', y: 130000, r: '95%' },
+  { x: 'DEVELOPER (10%)', y: 100000, r: '98%' },
+  { x: 'EXPANSION (10%)', y: 100000, r: '94%' },
+  { x: 'REWARD & COMPENSATION POOL (20%)', y: 100000, r: '98%' },
 ];
 export class PieRadius extends React.Component {
   public pie: AccumulationChartComponent;

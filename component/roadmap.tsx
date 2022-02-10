@@ -64,9 +64,9 @@ const RoadMap = () =>{
         <div className="grid grid-cols-1 gap-8 mt-10 lg:w-1/2 w-10/12 mx-auto cabinet">
             
             <div className="col-span-1 bg-blue-700 shadow-lg shadow-blue-900 rounded z-10">
-                <div className="flex flex-row justify-between  px-4 items-center">
+                <div className="flex flex-row justify-between  px-4 items-center"  onClick={() => setShowStage1((prev) => !prev) }>
                     <h3 className="text-2xl my-4">Stage 1</h3>  
-                    <button className={ !isShowStage1 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" }  onClick={() => setShowStage1((prev) => !prev) }>
+                    <button className={ !isShowStage1 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" }>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             viewBox="0 0 128 128"
                             style={{"fill":"#FFF"}}>    
@@ -98,9 +98,9 @@ const RoadMap = () =>{
                 </div>
             </div>
             <div className="col-span-1 bg-green-700 shadow-lg shadow-green-900 rounded z-10">
-                <div className="flex flex-row justify-between  px-4 items-center">
+                <div className="flex flex-row justify-between  px-4 items-center"  onClick={() => setShowStage2((prev) => !prev) }>
                     <h3 className="text-2xl my-4">Stage 2</h3>  
-                    <button className={ !isShowStage2 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" } onClick={() => setShowStage2((prev) => !prev) }>
+                    <button className={ !isShowStage2 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" }>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             viewBox="0 0 128 128"
                             style={{"fill":"#FFF"}}>    
@@ -133,9 +133,9 @@ const RoadMap = () =>{
                 </div>
             </div>
             <div className="col-span-1 bg-yellow-700 shadow-lg shadow-yellow-900 rounded z-10">
-                <div className="flex flex-row justify-between px-4 items-center">
+                <div className="flex flex-row justify-between px-4 items-center" onClick={() => setShowStage3((prev) => !prev) }>
                     <h3 className="text-2xl my-4">Stage 3</h3>  
-                    <button className={ !isShowStage3 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" } onClick={() => setShowStage3((prev) => !prev) }>
+                    <button className={ !isShowStage3 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" } >
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             viewBox="0 0 128 128"
                             style={{"fill":"#FFF"}}>    
@@ -167,10 +167,10 @@ const RoadMap = () =>{
                   
                 </div>
             </div>
-            <div className="col-span-1 bg-fuchsia-700 shadow-lg shadow-fuchsia-900 rounded z-10">
+            <div className="col-span-1 bg-fuchsia-700 shadow-lg shadow-fuchsia-900 rounded z-10"  onClick={() => setShowStage4((prev) => !prev) }>
                 <div className="flex flex-row justify-between  px-4 items-center">
                     <h3 className="text-2xl my-4">Stage 4</h3>  
-                    <button className={ !isShowStage4 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" } onClick={() => setShowStage4((prev) => !prev) }>
+                    <button className={ !isShowStage4 ? "inline-block w-10 h-10 text-black p-1 transition-all" : "inline-block w-10 h-10 text-black p-1 origin-center rotate-45 transition-all" }>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             viewBox="0 0 128 128"
                             style={{"fill":"#FFF"}}>    
