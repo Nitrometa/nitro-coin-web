@@ -291,7 +291,7 @@ nav {
   box-shadow: 0 15px 56px 0 rgb(104 71 1 / 60%);
 }
 .box-custom {
-  background-color: #0e0e22d6;
+  background-color: #0e0e22;
 }
 a {
   color: inherit;
@@ -383,7 +383,7 @@ a {
   } 
 }
 .background-custom{
-  background: url('../public/images/banner-meta1.jpg') 0 0  no-repeat;
+  background: url('../public/images/meta-min.jpg') 0 0  no-repeat;
   background-size: cover;
   position: relative;
 }
