@@ -4,8 +4,8 @@ import Mv from '../public/images/mv.png'
 
 const missionvission = () => {
   return (
-    <div className="flex lg:flex-row flex-col items-center justify-between gap-8 mb-20">
-        <div className=" w-9/12  box-6 ">
+    <div className="flex lg:flex-row flex-col items-center justify-between gap-8 ">
+        <div className=" w-full lg:w-6/12  box-6 ">
           <Image className="font-logo" src={Mv} alt="Logo" />
         </div>
         <div  className="w-full lg:w-6/12 ">

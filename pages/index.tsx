@@ -25,11 +25,11 @@ const Home = () => {
          <Tokenomics/>
        </section>
        <div className="w-full relative background-custom py-24 mb-32 z-10">
-        <section id="metaverse" className="container mx-auto ">
+        <section id="metaverse" className="container mx-auto mb-32">
             <Metaverse/>
         </section>
        </div>
-       <section id="7layersmetaverse" className="container mx-auto mb-32">
+       <section id="7layersmetaverse" className="container mx-auto ">
           <SevenLayers/>
        </section>
        <section id="nft" className="container mx-auto mb-32">

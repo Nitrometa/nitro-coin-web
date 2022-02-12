@@ -383,21 +383,22 @@ a {
   } 
 }
 .background-custom{
-  background: url('../public/images/meta-min.jpg') 0 0  no-repeat;
+  background: url('../public/images/meta1-min.jpg') 0 0  no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 
-.background-custom::after{
+/* .background-custom::after{
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(7,7,28,0.2);
   z-index: -1;
-}
+} */
 
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
