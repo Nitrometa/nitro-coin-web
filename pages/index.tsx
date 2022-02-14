@@ -12,8 +12,11 @@ import RoadMap from '../component/roadmap';
 const Home = () => {
   return (
     <>
-     <Layouts>
-       <section className="home-banner">
+      <div className="text-6xl min-h-screen flex items-center justify-center">
+        <h1>Page Unavailable</h1>
+      </div>
+     {/*<Layouts>
+        <section className="home-banner">
         <section id="home" className="container mx-auto mb-32 mb- min-h-screen flex flex-col justify-center">
           <Sectionone/>
         </section>
@@ -40,9 +43,8 @@ const Home = () => {
        </section>
        <section id="missionvission" className="container mx-auto mb-32">
          <Mission/>
-       </section>
- 
-     </Layouts>
+       </section> 
+     </Layouts>*/}
     </>
   )
 }
